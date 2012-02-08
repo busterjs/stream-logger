@@ -1,6 +1,6 @@
 {
     "name": "buster-stdio-logger",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Wrapper on top of buster-evented-logger that does pretty outout to stdout and stderr.",
     "author": { "name": "August Lilleaas and Christian Johansen" },
     "contributors": [{
@@ -19,6 +19,6 @@
         "url": "http://gitorious.org/buster/buster-stdio-logger/blobs/master/LICENSE"
     },
     "dependencies": {
-        "buster-evented-logger": "~0.4"
+        "buster-evented-logger": ">=0.4.1"
     }
 }
