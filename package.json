@@ -23,5 +23,8 @@
     },
     "dependencies": {
         "buster-evented-logger": ">=0.4.3"
+    },
+    "devDependencies": {
+        "buster": ""
     }
 }
