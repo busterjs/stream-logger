@@ -66,15 +66,15 @@ buster.testCase("stdio logger", {
     "default io": {
         setUp: function () {
             var self = this;
-            this.pout = process.stdout;
-            this.perr = process.stderr;
-            process.stdout = { write: function (str) { self.stdout += str; } };
-            process.stderr = { write: function (str) { self.stderr += str; } };
+            this.process = global.process;
+            global.process = {
+                stdout: { write: function (str) { self.stdout += str; } },
+                stderr: { write: function (str) { self.stderr += str; } }
+            };
         },
 
         tearDown: function () {
-            process.stdout = this.pout;
-            process.stderr = this.perr;
+            global.process = this.process;
         },
 
         "should default to console for stdio": function () {
