@@ -22,7 +22,7 @@
         "test": "./node_modules/buster/bin/buster-test"
     },
     "dependencies": {
-        "buster-evented-logger": ">=0.4.3"
+        "buster-evented-logger": ">=0.4.4"
     },
     "devDependencies": {
         "buster": ""
