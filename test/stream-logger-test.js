@@ -1,15 +1,15 @@
 var buster = require("buster");
 var assert = buster.assert;
-var stdioLogger = require("./../lib/buster-stdio-logger");
+var streamLogger = require("./../lib/stream-logger");
 
-buster.testCase("stdio logger", {
+buster.testCase("stream logger", {
     setUp: function () {
         var self = this;
         this.stdout = "";
         this.stderr = "";
         var join = function (arr, sep) { return [].join.call(arr, sep); };
 
-        this.logger = stdioLogger(
+        this.logger = streamLogger(
             { write: function () { self.stdout += join(arguments, " "); } },
             { write: function () { self.stderr += join(arguments, " "); } }
         );
@@ -78,7 +78,7 @@ buster.testCase("stdio logger", {
         },
 
         "should default to console for stdio": function () {
-            var logger = stdioLogger();
+            var logger = streamLogger();
 
             logger.i("Hey");
             logger.e("Game over");

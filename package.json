@@ -1,6 +1,6 @@
 {
-    "name": "buster-stdio-logger",
-    "version": "0.2.2",
+    "name": "stream-logger",
+    "version": "0.3.0",
     "description": "Wrapper on top of buster-evented-logger that does pretty outout to stdout and stderr.",
     "author": { "name": "August Lilleaas and Christian Johansen" },
     "contributors": [{
@@ -12,11 +12,11 @@
         "email": "august@augustl.com",
         "url": "http://augustl.com"
     }],
-    "main": "./lib/buster-stdio-logger",
-    "repository": "git://gitorious.org/buster/buster-stdio-logger",
+    "main": "./lib/stream-logger",
+    "repository": "git://gitorious.org/buster/stream-logger",
     "license": {
         "type": "BSD",
-        "url": "http://gitorious.org/buster/buster-stdio-logger/blobs/master/LICENSE"
+        "url": "http://gitorious.org/buster/stream-logger/blobs/master/LICENSE"
     },
     "scripts": {
         "test": "./node_modules/buster/bin/buster-test"
