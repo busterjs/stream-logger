@@ -1,5 +1,4 @@
 var buster = require("buster");
-var assert = buster.assert;
 var streamLogger = require("./../lib/stream-logger");
 
 buster.testCase("stream logger", {
@@ -15,42 +14,42 @@ buster.testCase("stream logger", {
         );
     },
 
-    "should write debug messages to stdout": function () {
+    "writes debug messages to stdout": function () {
         this.logger.d("Hey");
         this.logger.d("There");
 
         assert.equals(this.stdout, "Hey\nThere\n");
     },
 
-    "should write info messages to stdout": function () {
+    "writes info messages to stdout": function () {
         this.logger.info("Hey");
         this.logger.i("There");
 
         assert.equals(this.stdout, "Hey\nThere\n");
     },
 
-    "should write log messages to stdout": function () {
+    "writes log messages to stdout": function () {
         this.logger.log("Hey");
         this.logger.l("There");
 
         assert.equals(this.stdout, "Hey\nThere\n");
     },
 
-    "should write warning messages to stderr": function () {
+    "writes warning messages to stderr": function () {
         this.logger.warn("Hey");
         this.logger.w("There");
 
         assert.equals(this.stderr, "Hey\nThere\n");
     },
 
-    "should write error messages to stderr": function () {
+    "writes error messages to stderr": function () {
         this.logger.error("Hey");
         this.logger.e("There");
 
         assert.equals(this.stderr, "Hey\nThere\n");
     },
 
-    "should prefix with log level when being verbose": function () {
+    "prefixes with log level when being verbose": function () {
         this.logger.verbose = true;
 
         this.logger.d("Hey");
@@ -77,7 +76,7 @@ buster.testCase("stream logger", {
             global.process = this.process;
         },
 
-        "should default to console for stdio": function () {
+        "defaults to console for stdio": function () {
             var logger = streamLogger();
 
             logger.i("Hey");
@@ -88,13 +87,13 @@ buster.testCase("stream logger", {
         }
     },
 
-    "should print inline message without line-break": function () {
+    "prints inline message without line-break": function () {
         this.logger.inline.l("Hey there");
 
         assert.equals(this.stdout, "Hey there");
     },
 
-    "should print inline message with long method name": function () {
+    "prints inline message with long method name": function () {
         this.logger.inline.debug("Hey there");
 
         assert.equals(this.stdout, "Hey there");
@@ -110,7 +109,7 @@ buster.testCase("stream logger", {
     },
 
     "as stream": {
-        "should return a stream that logs at level 'log'": function () {
+        "returns a stream that logs at level 'log'": function () {
             var logStream = this.logger.streamForLevel("log");
             var infoStream = this.logger.streamForLevel("info");
 
@@ -121,7 +120,7 @@ buster.testCase("stream logger", {
             assert.equals(this.stdout, "Hey");
         },
 
-        "should respond to changes in level": function () {
+        "responds to changes in level": function () {
             var logStream = this.logger.streamForLevel("log");
 
             logStream.write("Before");

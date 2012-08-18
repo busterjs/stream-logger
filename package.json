@@ -19,10 +19,10 @@
         "url": "http://gitorious.org/buster/stream-logger/blobs/master/LICENSE"
     },
     "scripts": {
-        "test": "./node_modules/buster/bin/buster-test"
+        "test": "node test/stream-logger-test"
     },
     "dependencies": {
-        "buster-evented-logger": ">=0.4.4"
+        "evented-logger": ">=0.4.4"
     },
     "devDependencies": {
         "buster": ""
