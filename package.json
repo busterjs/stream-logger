@@ -2,7 +2,7 @@
     "name": "stream-logger",
     "version": "0.3.0",
     "description": "Wrapper on top of buster-evented-logger that does pretty outout to stdout and stderr.",
-    "author": { "name": "August Lilleaas and Christian Johansen" },
+    "author": "Christian Johansen",
     "contributors": [{
         "name": "Christian Johansen",
         "email": "christian@cjohansen.no",
@@ -11,6 +11,10 @@
         "name": "August Lilleaas",
         "email": "august@augustl.com",
         "url": "http://augustl.com"
+    }, {
+        "name": "Stein Magnus Jodal",
+        "email": "stein.magnus@jodal.no",
+        "url": "http://jodal.no"
     }],
     "main": "./lib/stream-logger",
     "repository": "git://gitorious.org/buster/stream-logger",
