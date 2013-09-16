@@ -1,6 +1,6 @@
 {
     "name": "stream-logger",
-    "version": "0.3.0",
+    "version": "1.0.0",
     "description": "Wrapper on top of buster-evented-logger that does pretty outout to stdout and stderr.",
     "author": "Christian Johansen",
     "contributors": [{
@@ -26,7 +26,7 @@
         "test": "node test/stream-logger-test"
     },
     "dependencies": {
-        "evented-logger": ">=0.4.4"
+        "evented-logger": "~1.0"
     },
     "devDependencies": {
         "buster": "0.6.11"
