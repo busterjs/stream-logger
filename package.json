@@ -17,18 +17,21 @@
         "url": "http://jodal.no"
     }],
     "main": "./lib/stream-logger",
-    "repository": "git://gitorious.org/buster/stream-logger",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/busterjs/stream-logger.git"
+    },
     "license": {
         "type": "BSD",
-        "url": "http://gitorious.org/buster/stream-logger/blobs/master/LICENSE"
+        "url": "https://github.com/busterjs/stream-logger/blob/master/LICENSE"
     },
     "scripts": {
-        "test": "node test/stream-logger-test"
+        "test": "node node_modules/buster/bin/buster-test"
     },
     "dependencies": {
         "evented-logger": "~1.0"
     },
     "devDependencies": {
-        "buster": "0.6.11"
+        "buster": "*"
     }
 }

@@ -1,5 +1,6 @@
 var buster = require("buster");
 var streamLogger = require("./../lib/stream-logger");
+var assert = buster.referee.assert;
 
 buster.testCase("stream logger", {
     setUp: function () {
