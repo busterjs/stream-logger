@@ -26,7 +26,8 @@
         "url": "https://github.com/busterjs/stream-logger/blob/master/LICENSE"
     },
     "scripts": {
-        "test": "node node_modules/buster/bin/buster-test"
+        "test": "node node_modules/buster/bin/buster-test",
+        "test-debug": "node --debug-brk node_modules/buster/bin/buster-test"
     },
     "dependencies": {
         "evented-logger": "~1.0"
