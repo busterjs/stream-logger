@@ -21,18 +21,15 @@
         "type": "git",
         "url": "https://github.com/busterjs/stream-logger.git"
     },
-    "license": {
-        "type": "BSD",
-        "url": "https://github.com/busterjs/stream-logger/blob/master/LICENSE"
-    },
+    "license": "BSD-3-Clause",
     "scripts": {
         "test": "node node_modules/buster/bin/buster-test",
         "test-debug": "node --debug-brk node_modules/buster/bin/buster-test"
     },
     "dependencies": {
-        "evented-logger": "~1.0"
+        "evented-logger": "1.x"
     },
     "devDependencies": {
-        "buster": "*"
+        "buster": "0.7.x"
     }
 }
