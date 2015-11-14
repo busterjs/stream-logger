@@ -1,35 +1,39 @@
 {
-    "name": "stream-logger",
-    "version": "1.0.0",
-    "description": "Wrapper on top of buster-evented-logger that does pretty outout to stdout and stderr.",
-    "author": "Christian Johansen",
-    "contributors": [{
-        "name": "Christian Johansen",
-        "email": "christian@cjohansen.no",
-        "url": "http://cjohansen.no"
-    }, {
-        "name": "August Lilleaas",
-        "email": "august@augustl.com",
-        "url": "http://augustl.com"
-    }, {
-        "name": "Stein Magnus Jodal",
-        "email": "stein.magnus@jodal.no",
-        "url": "http://jodal.no"
-    }],
-    "main": "./lib/stream-logger",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/busterjs/stream-logger.git"
+  "name": "stream-logger",
+  "version": "1.0.1",
+  "description": "Wrapper on top of buster-evented-logger that does pretty outout to stdout and stderr.",
+  "author": "Christian Johansen",
+  "contributors": [
+    {
+      "name": "Christian Johansen",
+      "email": "christian@cjohansen.no",
+      "url": "http://cjohansen.no"
     },
-    "license": "BSD-3-Clause",
-    "scripts": {
-        "test": "node node_modules/buster/bin/buster-test",
-        "test-debug": "node --debug-brk node_modules/buster/bin/buster-test"
+    {
+      "name": "August Lilleaas",
+      "email": "august@augustl.com",
+      "url": "http://augustl.com"
     },
-    "dependencies": {
-        "evented-logger": "1.x"
-    },
-    "devDependencies": {
-        "buster": "0.7.x"
+    {
+      "name": "Stein Magnus Jodal",
+      "email": "stein.magnus@jodal.no",
+      "url": "http://jodal.no"
     }
+  ],
+  "main": "./lib/stream-logger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/busterjs/stream-logger.git"
+  },
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "test": "node node_modules/buster/bin/buster-test",
+    "test-debug": "node --debug-brk node_modules/buster/bin/buster-test"
+  },
+  "dependencies": {
+    "evented-logger": "1.x"
+  },
+  "devDependencies": {
+    "buster": "0.7.x"
+  }
 }
